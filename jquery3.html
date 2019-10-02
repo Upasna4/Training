@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="newjquery.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+
+           $("#Button1").click( function(){
+
+              $("#d").delay(500).fadeIn();
+              $("#e").delay(1500).fadeIn();
+              $("#f").delay(2500).fadeIn();
+
+           });
+
+           $("#Button2").click(function(){
+           $("#d").delay(500).fadeOut();
+           $("#e").delay(1500).fadeOut();
+           $("#f").delay(2500).fadeOut();
+           });
+
+           $("#Button3").click(function(){
+           $("#d").delay(800).fadeToggle();
+           $("#e").delay(2000).fadeToggle();
+           $("#f").delay(3000).fadeToggle();
+           });
+
+           $("#Button4").click(function(){
+           $("#d").fadeTo("slow",0.15);
+           $("#e").fadeTo("slow",0.4);
+           $("#f").fadeTo("slow",0.7);
+           });
+        });
+
+    </script>
+    <style type="text/css">
+        #d
+        {
+        background-color:green;
+        height:100px;
+        width:300px;
+        display:none;
+        }
+
+        #e
+        {
+        background-color:blue;
+        height:100px;
+        width:400px;
+        display:none;
+        }
+
+        #f
+        {
+        background-color:red;
+        height:100px;
+        width:500px;
+        display:none;
+        }
+
+</style>
+</head>
+<body>
+<input id="Button1" type="button" value="fade-in">
+<input id="Button2" type="button" value="fade-out">
+<input id="Button3" type="button" value="fade-toggle">
+<input id="Button4" type="button" value="fade-to">
+<div id="d">
+</div>
+<div id="e">
+</div>
+<div id="f">
+</div>
+</body>
+</html>

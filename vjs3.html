@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var car=["Maruti","Porsha","Honda","Tata","Ford"]
+    document.write(car + "<br>")
+    document.write(car[1] + "<br>")
+    car[2]="Hyundai";
+    document.write(car +"<br>")
+    //var a=car.length;
+    //car[a]="alto";
+    //document.write(car)
+    //var a=car.length;
+
+    function insert(){
+    var a=document.getElementById("text1").value;
+    var b=car.length;
+    car[b] = a;
+    document.getElementById("para").innerHTML = car;
+    }
+
+</script>
+<input type="text" id="text1">
+<input type="button" value="add" onclick="insert()">
+<p id="para"></p>
+</body>
+</html>

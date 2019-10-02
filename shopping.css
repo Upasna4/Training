@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav{
+    background-color: black;
+}
+
+ul{
+    padding: 0;
+    font-size: 0;
+}
+
+.top-nav li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.caption{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.caption h2, .caption h1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.caption h1{
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.caption h3{
+    font-size: 45px;
+    margin-top: 10px;
+}
+.buy-now{
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.section{
+    margin: 50px 0;
+    padding:15px;
+}
+.title{
+    padding: 0 20px;
+}
+.light-bg{
+    background-color: lightgrey;
+}
+
+.product-thumbnail{
+    width: 260px;
+    float: left;
+    margin: 0 11px;
+    text-align: center;
+    position: relative;
+}
+
+.dark-bg{
+    background-color: cornflowerblue;
+}
+.circle-icon{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+    border-radius: 50%;
+    padding-top: 13px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+}
+.square-icon{
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background-color: white;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.media{
+    width: 500px;
+}
+.icons{
+
+   color:red;
+    font-size: 40px;
+}
+
+.site-embedd iframe{
+    width: 100%;
+    min-height: 400px;
+}

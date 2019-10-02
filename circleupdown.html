@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        .circle{
+        height:100px;
+        width:100px;
+        border-radius:50%;
+        background-color:red;
+        animation: animate 5s infinite alternate ;
+        }
+
+        .circle1{
+        height:100px;
+        width:100px;
+        background-color:red;
+        animation: rotate 6s infinite alternate ;
+        }
+
+
+
+       @keyframes rotate{
+       0%{
+       }
+       100%{
+       transform:translate(1000px)rotate(700deg);
+       }
+      }
+
+
+        @keyframes animate{
+10%{
+    transform:translate(100px,100px);
+  }
+ 20%{
+    transform:translate(200px,0);
+    }
+30%{
+    transform:translate(300px,100px);
+    }
+
+40%{
+    transform:translate(400px,0);
+    }
+
+50%{
+    transform:translate(500px,100px);
+    }
+
+60%{
+    transform:translate(600px,0);
+    }
+
+70%{
+    transform:translate(700px,100px);
+    }
+
+80%{
+    transform:translate(800px,0);
+    }
+
+90%{
+    transform:translate(900px,100px);
+    }
+
+100%{
+    transform:translate(1000px,0px);
+    }
+
+}
+
+    </style>
+</head>
+<body>
+<div class="circle"></div>
+<div class="circle1"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="newjquery.js">
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+            $("#p1").click(function () {
+                $("#d1").hide();
+              });
+
+            $("#p2").click(function () {
+                $("#d1").show();
+              });
+
+        });
+
+    </script>
+    <style type="text/css">
+        #d1
+        {
+        background-color:green;
+        width:201px;
+        height:200px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1">Hide</p>
+    <p id="p2">Show</p>
+</div>
+<br/>
+<br/>
+    <div id="d1">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   function table(){
+    var n;
+    var a;
+    var n=parseInt(document.getElementById("text1").value);
+    for(a=1;a<=10;a++){
+        document.write(n + "*" + a + "=" + n*a +"<br/>");
+     }
+}
+</script>
+<input type="text" id="text1">
+<input type="button" value="click" onclick="table()">
+</body>
+</html>

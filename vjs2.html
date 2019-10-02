@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text1">
+<input type="text" id="text2">
+<input type="button" value="add" onclick="sum()">
+<p id="para"></p>
+
+    <script>
+    function sum(){
+
+    var a=parseInt(document.getElementById("text1").value);
+    var b=parseInt(document.getElementById("text2").value);
+    var c=a+b;
+    document.getElementById("para").innerHTML=c;
+    }
+
+</script>
+
+</body>
+</html>

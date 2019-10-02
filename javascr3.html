@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript">
+    /* function pswd()
+    {
+    var p = document.getElementById("t4").value;
+    var p1 = document.getElementById("t5").value;
+    if p.match(p1)
+    { */
+
+
+
+
+
+
+    function reg()
+    {
+    var c = document.getElementById("t3").value;
+    var exp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+     if (exp.match(c))
+     {
+     alert("its valid id");
+     }
+     else
+     {
+     alert("its not valid id");
+     }
+    }
+
+    function func1()
+    {
+    var a =document.getElementById("t1").value;
+    if (a == "")
+    {
+    document.getElementById("d1").innerHTML="* field empty";
+    }
+
+    var b =document.getElementById("t2").value;
+    if (b == "")
+    {
+    document.getElementById("d2").innerHTML="* field empty";
+    }
+
+    var c =document.getElementById("t3").value;
+    if (c == "")
+    {
+    document.getElementById("d3").innerHTML="* field empty";
+    }
+
+    var d =document.getElementById("t4").value;
+    if (d == "")
+    {
+    document.getElementById("d4").innerHTML="* field empty";
+    }
+
+    var e =document.getElementById("t5").value;
+    if (e == "")
+    {
+    document.getElementById("d5").innerHTML="* field empty";
+    }
+   }
+
+
+    </script>
+</head>
+<body>
+<form>
+    <label>name</label>
+<input type="text" id="t1" name="Name" /><br/>
+    <div id="d1"></div>
+    <label>age</label>
+<input type="text" id="t2" name="Age" /><br/>
+    <div id="d2"></div>
+    <label>email</label>
+<input type="text" id="t3" name="Email"/><br/>
+    <div id="d3"></div>
+    <label>password</label>
+<input type="text" id="t4" name="password"/><br/>
+    <div id="d4"></div>
+    <label>confirm password</label>
+<input type="text" id="t5" name="confirm password"/><br/>
+    <div id="d5"></div>
+
+    <p id="error"></p>
+<input id="Button1" type="button" value="SUBMIT" onclick="func1()" /><br/>
+</form>
+</body>
+</html>

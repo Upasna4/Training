@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .title{
+        background-color:black;
+        color:white;
+        padding:10px;
+        }
+        .description{
+        background-color:coral;
+        padding:10px;
+        display:none;
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <h3>title1</h3>
+</div>
+<div class="description">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap
+        into electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset
+        sheets containing Lore</p>
+</div>
+<div class="title">
+    <h3>title2</h3>
+</div>
+<div class="description">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap
+        into electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset
+        sheets containing Lore</p>
+</div>
+<div class="title">
+    <h3>title3</h3>
+</div>
+<div class="description">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap
+        into electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset
+        sheets containing Lore</p>
+</div>
+<div class="title">
+    <h3>title4</h3>
+</div>
+<div class="description">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap
+        into electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset
+        sheets containing Lore</p>
+</div>
+
+<script  src="newjquery.js"></script>
+<script>
+    $('.title').click(function(){
+        $(this).next().siblings('.description').slideUp();
+        $(this).next().slideToggle();
+})
+</script>
+</body>
+</html>

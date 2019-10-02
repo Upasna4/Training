@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function item(){
+    item_cost = 100
+    var qty=parseInt(document.getElementById("text1").value);
+    var total_cost=item_cost * qty;
+    var discount =  total_cost*.1 ;
+    amount=total_cost-discount;
+
+    if (qty = 1){
+        //document.getElementById("para").innerHTML=item_cost;
+        alert("Total amount payable is" + item_cost);
+        }
+    else if (qty > 1){
+    var total_cost=item_cost * qty;
+        if (total_cost > 1000){
+        amount=total_cost-discount;
+        alert("your discount is" +discount + "and amount to be paid is" +amount);
+        }
+        else{
+        alert("amount to be paid is" +total_cost);
+        }
+      }
+
+
+   }
+</script>
+<input type="text" id="text1">
+<input type="button" value="buy" onclick="item()">
+
+</body>
+</html>

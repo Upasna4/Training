@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+<form onsubmit="return validate()">
+    <label>name</label>
+<input type="text" id="t1" name="Name" /><br/>
+    <div id="d1"></div>
+    <label>age</label>
+<input type="text" id="t2" name="Age" /><br/>
+    <div id="d2"></div>
+    <label>email</label>
+<input type="text" id="t3" name="Email"/><br/>
+    <div id="d3"></div>
+    <label>password</label>
+<input type="text" id="t4" name="password"/><br/>
+    <div id="d4"></div>
+    <label>confirm password</label>
+<input type="text" id="t5" name="confirm password"/><br/>
+    <div id="d5"></div>
+
+    <p id="error"></p>
+<input id="Button1" type="submit" value="SUBMIT"/><br/>
+</form>
+
+
+<script>
+    function validate(){
+    var name = document.getElementById("t1").value;
+    var age = document.getElementById("t2").value;
+    var email = document.getElementById("t3").value;
+    var pass = document.getElementById("t4").value;
+    var cpass = document.getElementById("t5").value;
+
+    var exp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+    if(name != "" && age != "" && email != "" && pass != "" && cpass!=""){
+        if(email.match(exp)){
+
+           if(pass==cpass){
+
+        }
+        else{
+        document.getElementById("d4").innerHTML="* pasword and confirm match doesnt match ";
+         return false;
+         }
+
+        }
+        else{
+        document.getElementById("d3").innerHTML="* enter valid email";
+        return false;
+       }
+
+}
+
+    else{
+    document.getElementById("error").innerHTML = "* Please Fill All Fields";
+    return false;
+    }
+
+    }
+</script>
+
+</body>
+</html>

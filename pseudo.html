@@ -1,0 +1,247 @@
+< html>
+<head>
+    <style>
+        p:first-child{
+        color:red;
+        }
+        p:last-child{
+        color:green;
+        }
+        p:nth-of-type(even){
+        background-color:brown;
+        }
+        input:checked + label{
+        color:red;
+        }
+        input:focus{
+        border:2px solid green;
+        }
+        input:required{
+        background-color:brown;
+        }
+        input:in-range{
+        border:2px solid brown;
+        }
+        input:out-of-range{
+        border:2px solid yellow;
+        }
+        input:invalid{
+        background-color:red;
+        }
+        input:valid{
+        background-color:green;
+        }
+    </style>
+    <title>pseudo classes</title>
+    <link type="text/css" rel="stylesheet" href="pseudo.css">
+</head>
+<body>
+<div class="box1">
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+</div>
+<p>this is out of box para</p>
+
+<div class="box2">
+    <p>this is 2nd para</p>
+</div>
+
+<input type="email">
+
+
+<input type="text"disabled>
+
+<input type="number" min="10" max="20">
+
+<input type="chekbox" name="abc" value="books"><label>Books</label>
+<input type="chekbox" name="abc" value="clothes"><label>clothes</label>
+<input type="chekbox" name="abc" value="apparel"><label>apparel</label>
+<input type="chekbox" name="abc" value="footwear"><label>footwear</label>
+
+
+
+<nav>
+        <ul>
+             <li><a href="https://google.com">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#">Contact Us</a></li>
+        </ul>
+</nav>
+
+<div class="container">
+    <div class="banner">
+        <div class="caption">
+            <h1>Summer Sale</h1>
+            <h3>50% OFF</h3>
+            <a href="#" class="buy-now">Buy Now</a>
+        </div>
+        <img src="images/fashion.jpg" class="img-responsive" alt="banner">img-responsive" alt="banner">
+    </div>
+
+
+    <div class ="section light-bg">
+    <div class="title">
+      <h2>MOBILES</h2>
+    </div>
+        <div class="clearfix">
+            <div class="product-thumbnail">
+            <span class="circle-icon">Sale</span>
+          <img src="images/3b.jpg" class="img-responsive" alt="product">
+          <h4>Redmi</h4>
+                <p>Rs 23000</p>
+        </div>
+
+
+
+    <div class="product-thumbnail">
+            <span class="circle-icon">Sale</span>
+        <img src="images/3b.jpg" class="img-responsive" alt="product">
+        <h4>vivo</h4>
+        <p>Rs 28000</p>
+    </div>
+
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/3b.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 3000</p>
+    </div>
+
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/3b.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>price:Rs 3000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/3b.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>price:Rs 3000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/8a.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>price:Rs 4000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/8a.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>price:Rs 4000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="circle-icon">Sale</span>
+        <img src="images/8a.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>price:Rs 3000</p>
+    </div>
+</div>
+
+
+<div class ="section dark-bg">
+    <div class="title">
+        <h2>WATCHES FOR WOMEN</h2>
+    </div>
+    <div class="clearfix">
+        <a href="https:google.com">
+                <div class="product-thumbnail">
+                        <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>redmi</h4>
+        <p>Rs 2300</p>
+    </div>
+        </a>
+    <div class="product-thumbnail">
+        <div class="product-thumbnail">
+            <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>vivo</h4>
+        <p>Rs 28000</p>
+    </div>
+    <div class="product-thumbnail">
+         <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 3000</p>
+    </div>
+    <div class="product-thumbnail">
+        <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 3000</p>
+    </div>
+    <div class="product-thumbnail">
+        <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 3000</p>
+    </div>
+
+        <div class="product-thumbnail">
+            <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 4000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 4000</p>
+    </div>
+
+    <div class="product-thumbnail">
+        <span class="square-icon">Sale</span>
+        <img src="images/watch2.jpg" class="img-responsive" alt="product">
+        <h4>samsung</h4>
+        <p>Rs 4000</p>
+    </div>
+</div>
+    </div>
+
+ <div class="section">
+     <!--supported formats for video tag - .mp4, .ogg, .webM -->
+    <div class="media">
+    <video class="img-responsive" controls autoplay loop>
+        <source src="dist/My Video1.mp4" type="video/mp4">
+            <source src="dist/My Video1.ogg" type="video/ogg">
+    </video>
+
+    <!--supported formats for audio tag - .mp3, .ogg, .wav -->
+    <audio controls autoplay loop>
+        <source src="dist/Yaverclap - True Story.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div class="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WwkZqhpE0E4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="site-embedd">
+    <iframe src="https://netmaxtech.com" frameborder="0"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.8887717960156!2d76.76784561508585!3d30.72152718164105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedad88991a07%3A0xb4de516e9171f70e!2sNetmax%20-%20Python%20Machine%20Learning%20Training%20In%20Chandigarh!5e0!3m2!1sen!2sin!4v1567056352270!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="newjquery.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $(".title").click(function(){
+
+         $(this).next().siblings('.description').slideUp();
+         $(this).next().slideToggle();
+         });
+       });
+        </script>
+        <style type="text/css">
+        .description
+        {
+        display:none;
+        color:red;
+        }
+
+        .title
+        {
+        border:2px solid black;
+        color:green;
+        }
+
+        </style>
+    </head>
+<body>
+<div class="title">
+    title is python
+</div>
+<div class="title">
+    title is java
+</div>
+<div class="title">
+    title is js
+</div>
+
+<div class="description">
+    kfldhvfaiehviorbhvgsiuobhoriuy
+</div>
+<div class="description">
+    kfldhvfaiehviojgtdrdrfjk
+</div>
+<div class="description">
+    kfnvgksrlgn
+</div>
+
+
+</body>
+</html>

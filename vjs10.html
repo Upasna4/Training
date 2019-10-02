@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Get Details" onclick="getDetails()">
+<p id="para"></p>
+<p>Name</p>
+<p id="name"></p>
+<p>Course</p>
+<p id="course"></p>
+<p>Age</p>
+<p id="age"></p>
+
+<script>
+var empNames=["ram","raj","sita","geta","piya"];
+var arrayLength=empNames.length;
+
+function empDetails(name,course,age){
+    this.fullName=name;
+    this.course=course;
+    this.age=age;
+    }
+
+var ram=new empDetails("ram","java","23");
+var raj=new empDetails("raj","c","27");
+var sita=new empDetails("sita","c++","26");
+var geta=new empDetails("geta","python","24");
+var piya=new empDetails("piya","ml","23");
+
+function getDetails(){
+    var random=Math.floor(Math.random()*arrayLength);
+    var empname=empNames[random];
+    var objName=eval(empname);
+
+    document.getElementById("name").innerHTML=objName.fullName;
+    document.getElementById("course").innerHTML=objName.course;
+    document.getElementById("age").innerHTML=objName.age;
+    }
+
+
+</script>
+
+</body>
+</html>

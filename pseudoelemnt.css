@@ -1,0 +1,39 @@
+/*p:after{
+content:"world";
+display:inline-block;
+color:Green;
+margin-left:10px;
+}*/
+
+p{
+text-align:center;
+}
+
+p:after{
+content:" ";
+display:inline-block;
+height:6px;
+/*background-color:Black;*/
+width:400px;
+border-top:3px solid black;
+border-bottom:3px solid black;
+
+/*vertical-align:center;
+/*vertical-align:top;*/
+
+
+}
+
+p:before{
+content:" ";
+display:inline-block;
+height:6px;
+/*background-color:Black;*/
+width:400px;
+/*vertical-align:center;*/
+border-top:3px solid black;
+border-bottom:3px solid black;
+
+
+}
+

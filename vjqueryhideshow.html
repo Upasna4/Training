@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .red{
+        background-color: red;
+        padding: 10px;
+
+    }
+    .blue{
+        background-color: blue;
+        padding: 10px;
+
+    }
+
+    </style>
+</head>
+<body>
+
+    <p class="red">hello</p>
+    <input type="button"  id="hide" value="hide">
+    <input type="button"  id="show" value="show">
+    <input type="button"  id="toggle" value="toggle">
+
+    <script src="newjquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      //for single property  $('p').css('background-color','red');
+
+      // $('input').click(function(){
+    //$('p').css({'background-color':'red','font-size':'40px'});//for multiple properties of css
+     // })
+
+     // hide,show,toggle |fadeIn,fadeOut,fadeToggle |slideUp,slideDown,slideToggle
+
+     //addClass(),removeClass(),toggleClass()
+    /*$('#hide').click(function(){
+$('p').hide();
+    });
+    $('#show').click(function(){
+$('p').show();
+    });
+    $('#toggle').click(function(){
+$('p').toggle();
+    });
+    */
+
+    $('#hide').click(function(){
+$('p').addClass('red');
+    });
+    $('#show').click(function(){
+$('p').removeClass('red');
+    });
+    $('#toggle').click(function(){
+$('p').toggleClass('red ');
+    });
+
+
+
+    });
+    </script>
+</body>
+</html>

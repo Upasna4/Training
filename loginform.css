@@ -1,0 +1,35 @@
+.purple{
+     color:purple;
+     text-align:center;
+     text-decoration:underline;
+}
+
+.box{
+     width:600px;
+     height:600px;
+     border:2px solid black;
+     background:url(images/dwnldpic7.jpg);
+     background-repeat:repeat;
+     background-position:center center;
+     background-size:contain;
+     border-radius:20%;
+    }
+ .form-group{
+    margin-bottom:15px;
+    margin_top:15px;
+    text-align:center;
+    margin:15px;
+ }
+ label{
+    display:inline-block;
+    width:150px;
+    padding-top:40px;
+    box-sizing:border box;
+    margin-bottom:15px;
+    margin_top:15px;
+    text-align:center;
+    color:black;
+    margin:15px;
+    text-font-size:40px;
+  }
+

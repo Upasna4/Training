@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+function Person(fname,lname,dob,sal,desig){
+
+    this.firstname=fname;
+    this.lasname=lname;
+    this.dateofBirth=dob;
+    this.salary=sal;
+    this.designation=desig;
+    }
+    var john=new Person("John","Doe",1982,25000,"Developer");
+    var smith=new Person("Smith","Steve",1992,30000,"Deigner");
+    alert(john.firstname);
+    Person.prototype.age=function(){
+        return 2019-this.dateofBirth;
+        }
+
+</script>
+</body>
+</html>
+

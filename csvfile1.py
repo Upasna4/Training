@@ -1,0 +1,5 @@
+f=open("record.csv",'w')
+f.write("name,email,password\n")
+f.write("shivam,user@gmail.com,1234\n")
+f.write("user,user1@gmail.com,5678\n")
+f.close()

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var emp=[];
+    function addItem(){
+    var a=document.getElementById("text1").value;
+    emp.push(a);
+    document.getElementById("array").innerHTML=emp;
+    document.getElementById("text1").value="";
+    }
+
+    function removeItem(){
+    emp.pop();
+    document.getElementById("array").innerHTML=emp;
+    }
+
+    function addItem0(){
+    var a=document.getElementById("text1").value;
+    emp.unshift(a);
+    document.getElementById("array").innerHTML=emp;
+    document.getElementById("text1").value="";
+    }
+
+    function removeItem0(){
+    emp.shift();
+    document.getElementById("array").innerHTML=emp;
+    }
+    emp.splice(1,2,"john","xam");
+    </script>
+
+<input type="text" id="text1">
+<input type="button" value="add" onclick="addItem()">
+<input type="button" value="remove" onclick="removeItem()">
+<input type="button" value="addfirst" onclick="addItem0()">
+<input type="button" value="removefirst" onclick="removeItem0()">
+
+<p id="array"></p>
+
+
+</body>
+</html>

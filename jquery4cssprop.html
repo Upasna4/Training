@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="newjquery.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+
+           $("#Button1").click( function(){
+
+              $("#d").animate({left:'350px'});
+              $("#d").css({width:'400px'});
+              $("#d").css({height:'400px'});
+              });
+
+              $("#Button2").click( function(){
+
+              $("#d").animate({left:'0px'});
+              $("#d").css({width:'150px'});
+              $("#d").css({height:'200px'});
+              });
+
+              $("#Button3").click( function(){
+
+              $("#m").css({"background-color":"red"});
+              $("#m").css({"margin-top":"20px"});
+              $("#m").css({"height":"750px"});
+              $("#m").css({"width":"500px"});
+
+              });
+           });
+
+    </script>
+    <style type="text/css">
+        #d
+        {
+        background-color:green;
+        height:229px;
+        width:236px;
+        position:relative;
+        }
+
+        #m
+        {
+        background-color:gray;
+        height:500px;
+
+        }
+
+</style>
+</head>
+<body>
+<div>
+    <div id="m">
+        <div id="d">
+
+        </div>
+    </div>
+<br/>
+<input id="Button1" type="button" value="move" /><br/>
+<input id="Button2" type="button" value="move" /><br/>
+<input id="Button3" type="button" value="color" />
+</div>
+</body>
+</html>

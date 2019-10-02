@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="newjquery.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+
+
+            $("#a1").click( function (){
+
+                $("#e").slideToggle();
+
+           });
+
+           $("#a1").mouseleave(function () {
+           $("#e").slideUp();
+
+           });
+           });
+
+    </script>
+    <style type="text/css">
+        #d
+        {
+        background-color:grey;
+        border:2 px solid ;
+        text-align:center;
+        }
+
+        #e
+        {
+        background-color:grey;
+        border:2 px solid ;
+        text-align:center;
+        display:none;
+        padding:50px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="d">
+    <a id="a1" href="#">
+        click here
+    </a>
+</div>
+<div id="e">
+    efjnehj
+</div>
+</body>
+</html>

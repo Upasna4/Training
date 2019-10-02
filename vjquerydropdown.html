@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+        background-color:black;
+        padding:0;
+        }
+
+        li{
+        display:inline-block;
+        }
+
+        a{
+        color:white;
+        padding:10px;
+        text-decoration:none;
+        display:block;
+        }
+        .dropdown-menu{
+        position:absolute;
+        display:none;
+        }
+        .dropdown-menu li{
+        display:block;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown"><a href="#">Products</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li class="dropdown"><a href="#">Books</a>
+        <ul class="dropdown-menu">
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+                <li><a href="#">Product1</a></li>
+        </ul>
+</li>
+
+    </ul>
+</nav>
+
+<input type="text" name="name" id="text1">
+<p></p>
+
+<script  src="newjquery.js"></script>
+<script>
+$(document).ready(function(){
+
+$('input').keydown(function(){
+    $('p').html($(this).val());
+
+    })
+
+    //$('#text1').val("Default Name");
+    //var a=$('$text1').val();
+
+    //$('p').html("<strong>" + "change the text" + "</strong>");
+    //var b=$('p').html();
+
+    //$('p').html("<strong>" + "change the text" + "</strong>");
+
+
+    $('.dropdown').hover(function(){
+        $(this).siblings().find('.dropdown-menu').slideUp();
+        $(this).find('.dropdown-menu').slideToggle();
+        })
+})
+</script>
+</body>
+</html>

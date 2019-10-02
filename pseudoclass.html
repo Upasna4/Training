@@ -1,0 +1,77 @@
+<html>
+<head>
+    <style>
+        p:first-child{
+        color:red;
+        }
+        p:last-child{
+        color:green;
+        }
+        p:nth-of-type(even){
+        background-color:brown;
+        }
+        input:checked + label{
+        color:red;
+        }
+        input:focus{
+        border:2px solid green;
+        }
+        input:required{
+        background-color:brown;
+        }
+
+        input:disabled{
+        background-color:brown;
+        }
+
+        input:in-range{
+        border:2px solid brown;
+        }
+        input:out-of-range{
+        border:2px solid yellow;
+        }
+        input:invalid{
+        background-color:red;
+        }
+        input:valid{
+        background-color:green;
+        }
+    </style>
+    <title>pseudo classes</title>
+
+</head>
+<body>
+<div class="box1">
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+    <p>this is a para</p>
+</div>
+<p>this is out of box para</p>
+
+<div class="box2">
+    <p>this is 2nd para</p>
+</div>
+
+<input type="email">
+
+
+<input type="text" disabled>
+
+<input type="number" min="10" max="20">
+
+<input type="checkbox" name="abc" value="books"><label>Books</label>
+<input type="checkbox" name="abc" value="clothes"><label>clothes</label>
+<input type="checkbox" name="abc" value="apparel"><label>apparel</label>
+<input type="checkbox" name="abc" value="footwear"><label>footwear</label>
+
+
+
+<body>
+
+</body>
+</html>
